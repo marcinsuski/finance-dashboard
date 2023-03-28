@@ -5,6 +5,7 @@ import { themeSettings } from "./theme";
 import CssBaseline from "@mui/material/CssBaseline";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Navbar from "./pages/navbar";
+import Dashboard from "./pages/dashboard";
 
 function App() {
     const theme = useMemo(() => createTheme(themeSettings), []);
@@ -21,10 +22,7 @@ function App() {
                     >
                         <Navbar />
                         <Routes>
-                            <Route
-                                path="/"
-                                element={<div>dashboard page</div>}
-                            />
+                            <Route path="/" element={<Dashboard />} />
                             <Route
                                 path="/predictions"
                                 element={<div>predictions page</div>}
