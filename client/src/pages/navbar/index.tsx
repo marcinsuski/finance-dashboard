@@ -11,6 +11,7 @@ const Navbar = (props: Props) => {
     const [selected, setSelected] = useState("dashboard");
     return (
         <FlexBetween mb="0.25rem" p="0.5rem 0rem" color={palette.grey[300]} >
+          
             {/* LEFT SIDE */}
             <FlexBetween gap="0.75rem" >
                 <img alt="icon" src="../../../icon-white.svg" width="30px" height="30px"></img>
@@ -19,6 +20,7 @@ const Navbar = (props: Props) => {
                     Finance dashboard
                 </Typography>
             </FlexBetween>
+
             {/* RIGHT SIDE */}
             <FlexBetween gap="2rem">
                 <Box sx={{ "&:hover": { color: palette.primary[100] } }}>
@@ -39,7 +41,7 @@ const Navbar = (props: Props) => {
                 <Box>
                     {" "}
                     <Link
-                        to="/"
+                        to="/predictions"
                         onClick={() => setSelected("predictions")}
                         style={{
                             color:

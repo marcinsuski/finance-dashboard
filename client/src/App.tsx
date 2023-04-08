@@ -23,11 +23,11 @@ function App() {
                     >
                         <Navbar />
                         <Routes>
+                            <Route path="/" element={<Dashboard />} />
                             <Route
                                 path="/predictions"
                                 element={<Predictions />}
                             />
-                            <Route path="/" element={<Dashboard />} />
                         </Routes>
                     </Box>
                 </ThemeProvider>
